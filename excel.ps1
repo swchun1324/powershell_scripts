@@ -1,6 +1,6 @@
 ﻿#Retrieving hardware info from the owi computers
-$username="owi\ashchu" #user credential for shared EX) owi\<user_name>
-$password="rule-LOST-pounds" | ConvertTo-SecureString -AsPlainText -Force #Change password for the shared drive credential
+$username="###" #user credential for shared EX) owi\<user_name>
+$password="###" | ConvertTo-SecureString -AsPlainText -Force #Change password for the shared drive credential
 $credential = New-Object System.Management.Automation.PsCredential($username, $password) #credential
 New-PSDrive -name share_data -Root \\owi-ws-g1-1\shared -Credential $credential -PSProvider FileSystem #file share location change \\<comp_name or ip>\<share location>
 
